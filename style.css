@@ -1,0 +1,234 @@
+/*LOGIN
+/* google font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ scroll-padding-top: 2rem;
+ text-decoration: none;
+ list-style: none;
+ scroll-behavior: smooth;
+ font-family: "Poppins", sans-serif;
+} 
+
+
+/* h1 Lens Geld font
+@font-face{
+ font-family: "Fonte";
+ src: url('Inversionz.ttf')
+}
+h1{
+ font-size: 70px;
+ font-weight: bolder;
+ color: #eeeded;
+ font-family: "Fonte";
+ border-left: 7px solid #ffffff;  
+ border-radius: 5px;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ list-style: none;
+ font-family: "Poppins", sans-serif;
+} 
+
+/* side navbar*/
+ .main{
+    width: 100%;
+    background-color: #ececec;
+ }
+.side-navbar{
+    position: fixed;
+    height: 100vh;
+    width: 260px;
+    background: #233b68;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.side-navbar ul{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.side-navbar ul li{
+    width: 100%;
+}
+.side-navbar ul li:hover{
+    background: #eeeded;
+}
+.side-navbar ul li:first-child{
+  margin-bottom: 1rem;
+  background: none;
+}
+.side-navbar ul li a{
+  display: block;
+  width: 100%;
+  display: flex;
+  color: #fff;
+}
+.side-navbar ul li a .icon{
+  min-width: 60px;
+  display: block;
+  font-size: 25px;
+  line-height: 60px;
+  height: 60px;
+  text-align: center
+}
+
+
+
+
+
+
+.h1login{
+ font-size: 70px;
+ font-weight: bolder;
+ color: #1c283e;
+ font-family: "Fonte";
+ border-left: 7px solid #ffffff;  
+ border-radius: 5px;
+}
+:root {
+    --main-color: #1c283e;
+    --second-color: #f0efef; 
+}
+section{
+    padding: 50px, 10%;
+}
+
+*::selection{
+    color: #ffffff;
+    background: #0d0666;
+}
+img{
+ width: 60%;
+ border-radius: 15%;
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #233b68;
+    box-shadow: 0 4px 41px rgba(5, 4, 22, 0.9);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+}
+.navbar{
+    display: flex;
+    
+    
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: rgb(143, 141, 141);
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+    color: #f0efef;
+}
+
+.home {
+    padding-left: 5%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(230, 230, 231);
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+.home-img {
+    flex: 1 1 75rem;
+}
+.home-img img{
+    animation: animate 2s linear;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-11px, 0);
+    }
+}
+
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.home-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: capitalize;
+    margin: 0.5rem 0 1.4rem;
+}
+
+/* login */
+bodylogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Arial";
+    gap: 16px;
+}
+.card {
+    background-color: #fff;
+    width: 30%;
+    height: 1500px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #1c283e;
+}
+.card h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 33%;
+}
+.card button{
+    padding: auto;
+    text-align: center;
+    background-color: #273a5c;
+    font: bold;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+}
+forms{
+    padding-left: 100%;
+}
