@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width="width=device-width, initial-scale=1.0>
+    <title>Lens Geld</title>
+    <link rel="icon" href="/Home/img/Logo Lens_Geld.png " type="image/png">
+         <!-- link para o css-->
+    <link rel="stylesheet" href="/Home/style.css">
+
+    <!-- box icons-->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- Navbar-->
+    <!-- 
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <h1> lENS gELD</h1>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </header>
+
+
+     Home 
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Bem vindo</span>
+            <h2> Inspiração que <br> Impulsiona</h2>
+            <a href="#" class="btn"> Junte-se a Nós</a>
+        </div>
+        <div class="home-img">
+            <img src="img/cara.jpeg" alt="">
+        </div>
+    </section>
+--> 
+
+ <!-- sidebar-->
+ <div class="main">
+    <div class="side-navbar">
+        <ul>
+            <li><a href="#">
+                <span class="icon"><img src="img/Logo Lens_Geld.png"></span>
+                <span class="text"><h1 class="LensGeld">l<br>g</h1></span>
+            </a></li>
+            <li><a href="/Home/index.html">
+                <span class="icon"><i class='bx bxs-home-alt-2'></i></span>
+                <!--Selected Home icon 
+                                 <span class="icon"><i class='bx bx-home-alt-2'></i></span>-->
+                <span class="text"><h2>Home</h2></span>
+
+            </a></li>
+            <li><a href="#">
+                <!--<span class="icon"><i class='bx bxs-message-square-detail'></i></span>-->
+                <span class="icon"><i class='bx bx-message-square-detail'></i></span>
+                <span class="text"><h2>Mensagens</h2></span>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class='bx bx-user-check'></i></span>
+                <span class="text"><h2>Teste de Perfil</h2></span>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class='bx bx-help-circle'></i></span>
+                <!--Selected FAQ icon
+                <i class='bx bxs-help-circle'></i> -->
+                <span class="text"><h2>FAQ</h2></span>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class='bx bx-network-chart'></i></span>
+                <span class="text"><h2>IA</h2></span>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class='bx bx-cog'></i></span>
+                <!--<span class="icon"><i class='bx bxs-cog' ></i></span>-->
+                <span class="text"><h2>Configurações</h2></span>
+            </a></li>
+        </ul>
+    </div>
+
+
+<!-----------------------------------------------------------------------------MAIN BODY---------------------------------------------------------------------->
+    <!--TOP NAVBAR-->
+    <div class="content">
+        <div class="top-navbar">
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <div>
+                <button class="dark-mode"></button>
+            </div>
+            <!--PERFIL-->
+            <div>
+                <button class="btn-menu"></button>
+        <nav class="menu">
+            <a class="btn-closed"><i class='bx bx-chevron-up'></i></a>
+            <ul>
+                <li><span class="profileicon"><i class='bx bxs-user'></i></span><a href="#">Editar Perfil</a></li>
+                <li><span class="profileicon"><i class='bx bxs-cog' ></i></span><a href="#">Configurações da Conta</a></li>
+                <li><span class="profileicon"><i class='bx bx-log-out'></i></i></span><a href="/Login/login.html">Sair</a></li>
+            </ul>
+        </nav>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+<!--
+        <Script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                $(".user-pic").click(function(){
+                $(".show").show();
+                });
+                $(".user-pic").click(function(){
+                    $(".menu").hide();
+                });
+            }
+        </Script> -->
+
+        <!-------DASHBOARD----->
+    <main>
+        <h1>Visão Geral</h1>
+        
+        <div class="insights">
+            <!-------RECEITA----->
+            <div class="receita">
+                <span class="material-symbols-outlined">analytics</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Receita Mensal</h3>
+                        <label for="total-money" class="money">R$</label>
+                        <input type="number" id="total-money" class="money" placeholder="Total"><br>
+                        <button class="btn-confirmar" onclick="addExpense()">Confirmar</button>
+                </div>
+            </div>
+            <small class="text-muted">Este mês</small>
+        </div>
+    <!-------DESPESAS----->
+    <div class="expenses">
+        <span class="material-symbols-outlined">trending_down</span>
+        <div class="middle">
+            <div class="left">
+                <h3>Despesas Mensais</h3>
+                <label class="money">R$</label>
+                <h1 id="expenses">00</h1>
+        </div>
+    </div>
+    <small class="text-muted">Este mês</small>
+    </div>
+    <!-------LUCRO----->
+    <div class="income">
+        <span class="material-symbols-outlined">monitoring</span>
+        <div class="middle">
+            <div class="left">
+                <h3>Dinheiro Restante</h3>
+                <label class="money">R$</label>
+                <h1 id="lucro">00</h1>
+        </div>
+    </div>
+    <small class="text-muted">Este mês</small>
+    </div>
+
+        <!------TABELA GASTOS------->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <div class="recent-expenses">
+            <h2>Gastos Recentes</h2>
+            <h3>Adcione os seus gastos do mês:</h3>
+        <input type="text" class="gastosname" id="product-name" placeholder="Nome"><br>
+
+        <label for="product-price">R$</label>
+        <input type="number" class="gastosvalor" id="product-price" placeholder="Valor">
+        <button class="btn-confirmar" onclick="addExpense()">Adcionar</button>
+
+            <table id="expenses-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>R$0,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="chart-container">
+            <canvas id="expense-chart"></canvas>
+        </div>
+    </main>
+</div>
+
+    <!-- <h1 id="bem"> lENS <br>gELD</h1> -->
+    <!-- link para JS personalizado-->
+    <script src="/Home/main.js"></script>
+</body>
+</html>
